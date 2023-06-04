@@ -1,4 +1,4 @@
-export interface IFoodData {
+export interface FoodData {
   id: number,
   title: string,
   price: number,
