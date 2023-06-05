@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { Card } from './components/card/card'
 import { useFoodData } from './hooks/useFoodData'
-import { CreateModal } from './components/createModal/CreateModal'
+import { CreateModal } from './components/createModal/createModal'
 
 export function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -24,7 +24,7 @@ export function App() {
          />
         )}
       </div>
-      {isModalOpen && <CreateModal />}
+      {isModalOpen && <CreateModal closeModal={handleOpenModal} />}
       <button onClick={handleOpenModal}>
         {isModalOpen ? 'Fechar' : 'Novo produto'}
       </button>
