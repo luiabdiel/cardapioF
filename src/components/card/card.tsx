@@ -1,12 +1,7 @@
+import { FoodData } from '../../interface/FoodData'
 import './card.css'
 
-type CardProps = {
-  title: string,
-  price: number,
-  image: string,
-}
-
-export function Card({ title, price, image } : CardProps){
+export function Card({ title, price, image } : FoodData){
     return(
         <div className="card">
           <img src={image} alt={title} />
